@@ -21,13 +21,11 @@ int decToBinary(int n){
 int decimalToBinary(int n){
     int ans = 0;
     int i =0;
-    while (n!=0)
-    {
+    while(n!=0){
         int bit = n&1;
         ans = bit*pow(10,i++)+ans;
-        n=n>>1;
+        n= n>>1;
     }
-    
     return ans;
 }
 
@@ -39,6 +37,7 @@ int main(){
     // cout<<decToBinary(n);
 
     //bitwise method
-    cout<<decimalToBinary(n);
+    // cout<<decimalToBinary(n);
+    cout<< (1<<2);
 return 0;
 }
