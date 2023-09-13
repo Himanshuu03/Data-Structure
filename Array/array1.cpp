@@ -26,7 +26,7 @@ void countZeroOnes(int arr[],int num){
     cout<<"The ones are"<<ones<<endl;
 }
 
-int findInTheArray(int arr[] ,int num){
+int findMinInTheArray(int arr[] ,int num){
     int max = INT_MAX;
     for(int i =0;i<num;i++){
         if(arr[i]<max){
@@ -34,6 +34,17 @@ int findInTheArray(int arr[] ,int num){
         }
     }
     return max;
+}
+
+int* reverseArr(int arr[] ,int num){
+    int left = 0;
+    int right = num - 1;
+    while (left<=right){
+        swap(arr[left],arr[right]);
+        left ++;
+        right --;
+    }
+    return arr;
 }
 
 int main(){
@@ -51,6 +62,15 @@ int main(){
     // cin>>find;
     // cout<<linearSearch(arr,num,find);
 
-   //Question 2
-   // countZeroOnes(arr,num);
+    //Question 2
+    // countZeroOnes(arr,num);
+
+    //Question 3
+    //cout<<findMinInTheArray(arr,num);
+
+    //Question 4
+    // int* newArr = reverseArr(arr,num);
+    // for(int i =0;i<num;i++){
+    //     cout<<newArr[i];
+    // } 
 }
