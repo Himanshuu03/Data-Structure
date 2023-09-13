@@ -47,6 +47,22 @@ int* reverseArr(int arr[] ,int num){
     return arr;
 }
 
+void extermePrint(int arr[],int num){
+    int left = 0;
+    int right = num-1;
+    while (left <= right)
+    {
+        if(left == right){
+            cout<<arr[left];
+        }
+        else{
+          cout<<arr[left]<<" "<<arr[right]<<" ";    
+        }
+        left++;
+        right--;
+    } 
+}
+
 int main(){
     int num;
     cin>>num;
@@ -73,4 +89,7 @@ int main(){
     // for(int i =0;i<num;i++){
     //     cout<<newArr[i];
     // } 
+
+    //Question 5
+    extermePrint(arr,num);
 }
