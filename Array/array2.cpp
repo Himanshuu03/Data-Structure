@@ -33,6 +33,37 @@ void sorted(int arr[],int size){
         cout<<arr[i];
     }
 }
+
+void shiftingArrayToRight(int arr[],int num,int k){
+    
+    // Method 1
+
+    // for(int j =0;j<k;j++){
+    // int store = arr[num-1];
+    // for(int i = num-1;i>0;i--){
+    //     arr[i] = arr[i-1];
+    // }
+    // arr[0] = store;
+    // }
+
+
+    // Method 2
+    int temp[k];
+    int j =0;
+    for(int i=num-k;i<num;i++){
+        temp[j++]= arr[i];
+    }
+    for(int i =num-1;i>0;i--){
+        arr[i] = arr[i-k];
+    }
+    for(int i=0;i<k;i++){
+        arr[i] = temp[i];
+    }
+    for(int i=0;i<num;i++){
+        cout<<arr[i]<<" ";
+    }
+}
+
 int main(){
     int num;
     cin>>num;
@@ -40,7 +71,6 @@ int main(){
     for(int i=0;i<num;i++){
         cin>>arr[i];
     }
-
     // Question 1
     // cout<<findUnique(arr,num);
 
@@ -48,6 +78,9 @@ int main(){
     // printPair(arr,num);
 
     //Question 3
-    sorted(arr,num);
+    // sorted(arr,num);
+
+    //Question 4
+    shiftingArrayToRight(arr,num,2);
 return 0;
 }
