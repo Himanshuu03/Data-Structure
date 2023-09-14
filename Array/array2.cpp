@@ -14,6 +14,25 @@ void printPair(int arr[] ,int size){
         }
     }
 }
+void sorted(int arr[],int size){
+    int left = 0;
+    int right = size-1;
+    int i = 0;
+    while(left <= right){
+        if(arr[left] == 0){
+            arr[i] = arr[left];
+            i++;
+            left++;
+        }
+        else{
+            swap(arr[left],arr[right]);
+            right--;
+        }
+    }
+    for(int i=0;i<size;i++){
+        cout<<arr[i];
+    }
+}
 int main(){
     int num;
     cin>>num;
@@ -26,6 +45,9 @@ int main(){
     // cout<<findUnique(arr,num);
 
     // Question 2
-    printPair(arr,num);
+    // printPair(arr,num);
+
+    //Question 3
+    sorted(arr,num);
 return 0;
 }
