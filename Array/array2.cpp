@@ -17,11 +17,8 @@ void printPair(int arr[] ,int size){
 void sorted(int arr[],int size){
     int left = 0;
     int right = size-1;
-    int i = 0;
     while(left <= right){
         if(arr[left] == 0){
-            arr[i] = arr[left];
-            i++;
             left++;
         }
         else{
@@ -53,7 +50,7 @@ void shiftingArrayToRight(int arr[],int num,int k){
     for(int i=num-k;i<num;i++){
         temp[j++]= arr[i];
     }
-    for(int i =num-1;i>0;i--){
+    for(int i =num-1;i>k-1;i--){
         arr[i] = arr[i-k];
     }
     for(int i=0;i<k;i++){
