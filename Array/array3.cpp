@@ -30,12 +30,29 @@ int main(){
     // cout<<findMax(arr,2,2);
 
     //Question 2
-    for(int i=0;i<2;i++){
-        int sum = 0;
-        for(int j =0;j<2;j++){
-            sum = sum+arr[i][j];
-        }
-        cout<<sum<<endl;
-    }
+    // for(int i=0;i<2;i++){
+    //     int sum = 0;
+    //     for(int j =0;j<2;j++){
+    //         sum = sum+arr[i][j];
+    //     }
+    //     cout<<sum<<endl;
+    // }
+
+    //Question 3
+    // for(int i=0;i<2;i++){
+    //     int sum = 0;
+    //     for(int j =0;j<2;j++){
+    //         sum = sum+arr[j][i];
+    //     }
+    //     cout<<sum<<endl;
+    // }
+
+    //Question 4
+    // int sum =0;
+    // for(int i=0;i<2;i++){
+    //     sum = sum + arr[i][i];
+    //     cout<<arr[i][i]<<" ";
+    // }
+    // cout<<sum;
 return 0;
 }
