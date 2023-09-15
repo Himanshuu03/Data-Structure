@@ -54,5 +54,19 @@ int main(){
     //     cout<<arr[i][i]<<" ";
     // }
     // cout<<sum;
+
+    //Question 5
+    for(int i=0;i<2;i++){
+        for(int j =i;j<2;j++){
+            swap(arr[i][j],arr[j][i]);
+        }
+    }
+
+    for(int i=0;i<2;i++){
+        for(int j =0;j<2;j++){
+           cout<<arr[i][j]<<" ";
+        }
+        cout<<endl;
+    }
 return 0;
 }
