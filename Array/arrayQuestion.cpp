@@ -21,18 +21,34 @@ int main(){
     //     cout<<arr[i]<<" ";
     // }
 
-    int arr[] = {1,3,5,3,4};
-    int size = sizeof(arr) /sizeof(int);
-    for(int i =0;i<size;i++){
-        int index = abs(arr[i]);
-        if(arr[index-1] > 0){
-            arr[index-1] *= -1;
-        }
-    }
-    for(int i=0;i<size;i++){
-        if(arr[i]>0){
-          cout<<i+1;
-        }
-    }
+    // int arr[] = {1,3,5,3,4};
+    // int size = sizeof(arr) /sizeof(int);
+    // for(int i =0;i<size;i++){
+    //     int index = abs(arr[i]);
+    //     if(arr[index-1] > 0){
+    //         arr[index-1] *= -1;
+    //     }
+    // }
+    // for(int i=0;i<size;i++){
+    //     if(arr[i]>0){
+    //       cout<<i+1;
+    //     }
+    // }
+    // int i =0;
+
+    // while(i<size){
+    //     int index = arr[i] -1;
+    //     if(arr[i] != arr[index]){
+    //         swap(arr[i],arr[index]);
+    //     }
+    //     else{
+    //         i++;
+    //     }
+    // }
+    // for(int i=0;i<size;i++){
+    //     if(arr[i] != i+1){
+    //         cout<<i+1<<" ";
+    //     }
+    // }
 return 0;
 }
